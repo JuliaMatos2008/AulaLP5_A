@@ -4,6 +4,7 @@
  */
 package tools;
 
+import java.util.Date;
 import javax.swing.JCheckBox;
 import javax.swing.JComboBox;
 import javax.swing.JComponent;
@@ -44,8 +45,34 @@ public class Util {
    public static void mensagem(String cad){
        JOptionPane.showMessageDialog(null, cad);
    }
+   
    public static boolean perguntar(String cad){
        JOptionPane.showConfirmDialog(null, cad);
        return true;
    }
+   
+   public static int strToInt(String num){
+    return Integer.parseInt(num);
+   }
+
+   public static String intToStr(int num){
+       return String.valueOf(num);
+   }
+   
+    public static double strToDouble(String num){
+    return 0;
+   }
+    
+    public static String doubleToStr(double num){
+    return "";
+   }
+   
+   public static Date strToDate(String data){
+       return null;
+   }
+   
+   public static String dateToStr( Date data){
+       return "";
+   }
+   
 }
